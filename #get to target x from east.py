@@ -11,18 +11,16 @@ def set_orientation_west() :
 if get_direction!=west:
     set_orientation_west()
 while get_x!=get_target_x:
-    while can_move==true and not is_in_front_of_enemy:
+    while can_move== True and not is_in_front_of_enemy:
         move 
         set_orientation_west
-        if not is_in_front_of_enemy:
-            if can_move == true :
-                move
+        if not is_in_front_of_enemy AND if can move== True:
+            move
             #on a resolu le sp1
     while not can_move:
         turn_right
-        if not is_in_front_of_enemy:
-            if can_move == true :
-                move 
+        if not is_in_front_of_enemy AND if can move== True:
+            move 
         while not can_move:
             turn_right
         if can_move: 
@@ -31,9 +29,8 @@ while get_x!=get_target_x:
         #sp2 fini
     while is_in_front_of_enemy:
         turn_right
-        if not is_in_front_of_enemy:
-            if can_move == true :
-                move 
+        if not is_in_front_of_enemy AND if can move== True:
+            move 
         else:
             turn_right
         turn_left
